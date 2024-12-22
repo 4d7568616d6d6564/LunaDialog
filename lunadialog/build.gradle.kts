@@ -35,33 +35,33 @@ android {
     buildFeatures {
         viewBinding = true
     }
-
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
+//
+//    publishing {
+//        singleVariant("release") {
+//            withSourcesJar()
+//            withJavadocJar()
+//        }
+//    }
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
-                from(components["release"])
-
-                groupId = "com.mechadev"
-                artifactId = "lunadialog"
-                version = "1.0.12"
-            }
-        }
-        repositories {
-            maven {
-                url = uri("https://jitpack.io")
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            create<MavenPublication>("release") {
+//                from(components["release"])
+//
+//                groupId = "com.mechadev"
+//                artifactId = "lunadialog"
+//                version = "1.0.12"
+//            }
+//        }
+//        repositories {
+//            maven {
+//                url = uri("https://jitpack.io")
+//            }
+//        }
+//    }
+//}
 dependencies {
 
     implementation(libs.androidx.core.ktx)
