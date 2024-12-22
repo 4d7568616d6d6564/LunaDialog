@@ -11,8 +11,8 @@ android {
         applicationId = "com.mechadev.lunadialog"
         minSdk = 23
         targetSdk = 35
-        versionCode = 3
-        versionName = "1.0.3"
+        versionCode = 4
+        versionName = "1.0.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-   // implementation(project(":lunadialog"))
+    implementation(project(":lunadialog"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
