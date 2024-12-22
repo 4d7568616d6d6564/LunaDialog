@@ -52,7 +52,7 @@ afterEvaluate {
 
                 groupId = "com.mechadev"
                 artifactId = "lunadialog"
-                version = "1.0.7"
+                version = "1.0.11"
             }
         }
         repositories {
