@@ -9,72 +9,58 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mechadev.lunadialog.databinding.ActivityMainBinding
-import com.mechadev.lunadialog.ui.LunaProgressDialog
-import com.mechadev.lunadialog.utils.AnimationType
-import com.mechadev.lunadialog.utils.DialogAnimationStyle
-import com.mechadev.lunadialog.utils.OrientationType
-import com.mechadev.lunadialog.utils.ProgressDrawable
+
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var lunaProgressDialog: LunaProgressDialog
+   // private lateinit var lunaProgressDialog: LunaProgressDialog
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        /*
-        val sdpValue = resources.getDimension(R.dimen._67sdp) // Bu, float bir değer döndürecektir
-        val roundedValue = sdpValue.toInt()
-
-        Log.e("TAGSDP","SDPVALUE: "+sdpValue);
-        Log.e("TAGSDP","RDNVALUE: "+roundedValue);
-        Log.e("TAGSDP","DMNVALUE: "+R.dimen._67sdp);
-        */
-
-
-
-        val lunaProgressDialog = LunaProgressDialog.Builder(this)
-            .setTitleText("M")
-            .setDescriptionText("Bu açıklama")
-            .setCancelableOption(true)
-            .setContainerOrientation(OrientationType.VERTICAL)
-            .setAnimationType(AnimationType.IMAGEVIEW)
-            .setAnimationDelay(200L)
-            .setAnimationStyle(DialogAnimationStyle.NORMAL)
-            .setAnimationStart(false)
-            .setProgressDrawable(ProgressDrawable.DOT_PROGRESS)
-            .setProgressScaleType(ImageView.ScaleType.CENTER_CROP)
-            .setTitleTextColor(Color.GREEN)
-            .setTitleTextStyle(Typeface.BOLD)
-            .setTitleFontFamily(R.font.beach)
-            .setDescriptionFontFamily(R.font.poppins_medium)
-            .setDescriptionTextColor(Color.RED)
-            .setAnimationFPS(18)
-            .setProgressImageSize(64,64)
-            .setTitleTextSizeSSP(R.dimen._34ssp)
-            .setTextContainerMargin(0,0,0,0)
-            .setTextContainerGravity(Gravity.CENTER)
-            .setContainerPositionGravity(Gravity.CENTER,56,0)
-            .setContainerBackgroundShape(GradientDrawable.RECTANGLE)
-            .setContainerDimAmount(0.1f)
-            .setContainerCornerRadius(16)
-            .setContainerPaddingSDP(R.dimen._19sdp)
-            .setContainerBackgroundColor(
-                ContextCompat.getColor(
-                    applicationContext,
-                    R.color.kprogresshud_default_color
-                )
-            )
-            .build()
-        binding.showDialogButton.setOnClickListener {
-
-            if (lunaProgressDialog.isShowing) {
-                lunaProgressDialog.dismiss()
-            } else {
-                lunaProgressDialog.show()
-            }
-
-        }
+//
+//        val lunaProgressDialog = LunaProgressDialog.Builder(this)
+//            .setTitleText("Title")
+//            .setDescriptionText("This is desc")
+//            .setCancelableOption(true)
+//            .setContainerOrientation(OrientationType.VERTICAL)
+//            .setAnimationType(AnimationType.IMAGEVIEW)
+//            .setAnimationDelay(200L)
+//            .setAnimationStyle(DialogAnimationStyle.NORMAL)
+//            .setAnimationStart(false)
+//            .setProgressDrawable(ProgressDrawable.DOT_PROGRESS)
+//            .setProgressScaleType(ImageView.ScaleType.CENTER_CROP)
+//            .setTitleTextColor(Color.GREEN)
+//            .setTitleTextStyle(Typeface.BOLD)
+//            .setTitleFontFamily(R.font.beach)
+//            .setDescriptionFontFamily(R.font.poppins_medium)
+//            .setDescriptionTextColor(Color.RED)
+//            .setAnimationFPS(18)
+//            .setProgressImageSize(64, 64)
+//            .setTitleTextSizeSSP(R.dimen._34ssp)
+//            .setTextContainerMargin(0, 0, 0, 0)
+//            .setTextContainerGravity(Gravity.CENTER)
+//            .setContainerPositionGravity(Gravity.CENTER, 56, 0)
+//            .setContainerBackgroundShape(GradientDrawable.RECTANGLE)
+//            .setContainerDimAmount(0.1f)
+//            .setContainerCornerRadius(16)
+//            .setContainerPaddingSDP(R.dimen._19sdp)
+//            .setContainerBackgroundColor(
+//                ContextCompat.getColor(
+//                    applicationContext,
+//                    R.color.kprogresshud_default_color
+//                )
+//            )
+//            .build()
+//
+//        binding.showDialogButton.setOnClickListener {
+//            if (lunaProgressDialog.isShowing) {
+//                lunaProgressDialog.dismiss()
+//            } else {
+//                lunaProgressDialog.show()
+//            }
+//
+//        }
     }
 }

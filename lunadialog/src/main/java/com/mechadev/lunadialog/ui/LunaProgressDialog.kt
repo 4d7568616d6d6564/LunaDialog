@@ -15,6 +15,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
 import com.mechadev.lunadialog.R
+import com.mechadev.lunadialog.databinding.DialogLunaProgressDialogBinding
 import com.mechadev.lunadialog.utils.AnimationType
 import com.mechadev.lunadialog.utils.DialogAnimationStyle
 import com.mechadev.lunadialog.utils.OrientationType
