@@ -24,3 +24,7 @@ dependencyResolutionManagement {
 rootProject.name = "LunaDialog"
 include(":app")
 include(":lunadialog")
+
+dependencyResolutionManagement {
+    repositoriesMode = RepositoriesMode.PREFER_SETTINGS
+}
