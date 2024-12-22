@@ -13,8 +13,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.ImageView
-import com.mechadev.lunadialog.R
-import com.mechadev.lunadialog.databinding.DialogLunaProgressBarBinding
+import com.mechadev.lunadialog.library.R
+import com.mechadev.lunadialog.library.databinding.DialogLunaProgressBarBinding
 import com.mechadev.lunadialog.utils.DialogAnimationStyle
 import com.mechadev.lunadialog.utils.OrientationType
 import com.mechadev.lunadialog.utils.ProgressDrawable

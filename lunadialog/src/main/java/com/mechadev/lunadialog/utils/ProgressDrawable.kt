@@ -1,6 +1,6 @@
 package com.mechadev.lunadialog.utils
 
-import com.mechadev.lunadialog.R
+import com.mechadev.lunadialog.library.R
 
 enum class ProgressDrawable(val drawableRes: Int) {
     DROP_SPINNER(R.drawable.flower_progress),

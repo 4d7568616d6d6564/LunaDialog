@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.mechadev.lunadialog"
+    namespace = "com.mechadev.lunadialog.library"
     compileSdk = 35
 
     defaultConfig {

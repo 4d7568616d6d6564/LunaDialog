@@ -1,6 +1,6 @@
 package com.mechadev.lunadialog.utils
 
-import com.mechadev.lunadialog.R
+import com.mechadev.lunadialog.library.R
 
 enum class DialogAnimationStyle(val styleRes: Int) {
     NORMAL(R.style.DialogZoomAnimation_Normal),
